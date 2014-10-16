@@ -11,3 +11,4 @@ github_username:  aust1nz
 # Build settings
 markdown: kramdown
 port: 3000
+exclude: ['vendor']
