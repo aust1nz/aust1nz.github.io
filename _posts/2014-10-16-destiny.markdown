@@ -1,10 +1,12 @@
---
+---
 layout: post
 title:  "Destiny: Better than Golf?"
 summary: "Destiny is a video game that is equal parts fun and frustrating."
 date:   2014-10-16 14:13:13
-categories: destiny video_games
+categories: destiny
+
 ---
+
 Destiny is kind of fun but I feel like it is a bit of a rip off too. For example, I have a friend who got a full set of purple armor just from strikes. But I didn't get any purple armor unless I bought it myself. Waaaaah!
 
 It's fun most of the time and I find myself wanting to play it while I'm at work. But, on the other hand, once I've been playing it for a while I'm like, "Why am I still playing this game?" Since you basically do the same four or five strikes over and over and over, even after they cease to be challenging.
