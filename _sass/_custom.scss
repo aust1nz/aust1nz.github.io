@@ -1,0 +1,11 @@
+/**
+ * Grey About Box
+ */
+.about {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    background-color: $grey-color-light;
+    padding: 10px 50px 5px 50px;
+    font-size: .85em;
+    margin-bottom: 15px;
+}
