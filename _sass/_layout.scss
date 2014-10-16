@@ -175,7 +175,13 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
+            -moz-border-radius: 15px;
+            border-radius: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            padding: 5px 10px 5px 10px;
+            margin-bottom: $spacing-unit;
     }
 }
 
@@ -184,11 +190,14 @@
     color: $grey-color;
 }
 
+.post-meta {
+    font-size: $small-font-size;
+}
+
 .post-link {
     display: block;
     font-size: 24px;
 }
-
 
 
 /**
