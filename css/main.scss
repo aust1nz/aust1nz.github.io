@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: Roboto, Helvetica, Arial, sans-serif;
+$header-font-family: Roboto+Slab;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -49,3 +50,6 @@ $on-laptop:        800px;
         "syntax-highlighting",
         "custom"
 ;
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
