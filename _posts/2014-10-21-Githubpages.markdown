@@ -2,7 +2,7 @@
 layout: post
 title:  "Moved to Github Pages"
 summary: "Easy hosting in Github Pages."
-date:   2014-10-16 16:04:00
+date:   2014-10-21 19:43:00
 categories: introduction
 
 ---
