@@ -26,7 +26,7 @@ $ cd myblog
   <li><p>Visit the site!</p>
       <p>By default, it's at localhost:4000.</p></li></ol>
 
-####So, Why use Jekyll instead of the other options?
+####So, why use Jekyll instead of the other options?
 
 There are a bunch of other easy ways to get a blog site posted. What's the advantage of using this tool? Here are a few alternate considerations, and some reasons to stick with Jekyll.
 
