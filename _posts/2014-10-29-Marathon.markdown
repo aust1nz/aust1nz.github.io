@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Moved to Github Pages"
-summary: "Easy hosting in Github Pages."
-date:   2014-10-21 19:43:00
-categories: introduction
+title:  "Working with D3"
+summary: "Testing some charting functions with D3."
+date:   2014-10-29 12:12:00
+categories: data_visualization, charting, running
 
 ---
 
