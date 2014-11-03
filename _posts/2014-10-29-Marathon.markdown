@@ -16,8 +16,44 @@ This is a sample post working on charting data using D3. In this case, with an i
           var w = $("#chart").width();
           var h = Math.floor(w / 2);
 
-          var dataset = [ 5, 10, 13, 19, 21, 25, 22, 18, 15, 13,
-                11, 12, 15, 20, 18, 17, 16, 18, 23, 25 ];
+          var marathon = [
+              { "mile": 1, "time": '9:22' },
+              { "mile": 2, "time": '7:29' },
+              { "mile": 3, "time": '7:36' },
+              { "mile": 4, "time": '6:55' },
+              { "mile": 5, "time": '7:18' },
+              { "mile": 6, "time": '6:52' },
+              { "mile": 7, "time": '7:14' },
+              { "mile": 8, "time": '7:08' },
+              { "mile": 9, "time": '7:17' },
+              { "mile": 10, "time": '7:01' },
+              { "mile": 11, "time": '7:02' },
+              { "mile": 12, "time": '7:15' },
+              { "mile": 13, "time": '7:08' },
+              { "mile": 14, "time": '7:18' },
+              { "mile": 15, "time": '7:13' },
+              { "mile": 16, "time": '7:26' },
+              { "mile": 17, "time": '7:25' },
+              { "mile": 18, "time": '7:20' },
+              { "mile": 19, "time": '7:25' },
+              { "mile": 20, "time": '7:40' },
+              { "mile": 21, "time": '7:32' },
+              { "mile": 22, "time": '7:52' },
+              { "mile": 23, "time": '8:18' },
+              { "mile": 24, "time": '7:24' },
+              { "mile": 25, "time": '9:09' },
+              { "mile": 26, "time": '9:22' },
+              { "mile": 27, "time": '8:53' }
+          ];
+
+          var dataset = [];
+
+          for (var i = 0; i < marathon.length; i++) {
+            var time = marathon[i].time;
+            var mins = parseFloat(time.substring(0, time.indexOf(":")));
+            var secs = parseFloat(time.substring(time.indexOf(":") + 1)) / 60;
+            dataset.push(mins + secs);
+          }
 
           var xScale = d3.scale.ordinal()
                           .domain(d3.range(dataset.length))
