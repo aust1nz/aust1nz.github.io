@@ -90,8 +90,8 @@ This is a sample post working on charting data using D3. In this case, with an i
               .data(dataset)
               .enter()
               .append("text")
-              .text(function(d) {
-                return round(d,2);
+              .text(function(d, i) {
+                return marathon[i].time;
               })
               .attr("x", function(d, i) {
                 return xScale(i) + xScale.rangeBand() / 2;
