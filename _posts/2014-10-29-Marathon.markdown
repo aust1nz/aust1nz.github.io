@@ -83,7 +83,7 @@ This is a sample post working on charting data using D3. In this case, with an i
                 return yScale(d);
               })
               .attr("fill", function(d) {
-                return "rgb(0, 0, " + (d * 10) + ")";
+                return "rgb(0, 0, " + d3.range(dataset.length) + ")";
               });
 
           svg.selectAll("text")
