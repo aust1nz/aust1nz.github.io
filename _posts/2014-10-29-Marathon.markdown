@@ -2,15 +2,9 @@
 layout: post
 title:  "I Ran A Marathon!"
 date:   2014-10-29 12:12:00
-categories: data_visualization, charting, running
-
+categories: running data_visualization
 ---
-
-# Data Visualization of my Marathon
-
-This post takes a look at a marathon I recently ran, using a cool charting library in Javascript called [D3.js](http://d3js.org/).
-
-Here's a quick look at my mile times.
+This post takes a look at a marathon I recently ran, using a cool charting library in Javascript called D3. Here's a quick look at my mile times.
 
 <div id="chart"></div>
 

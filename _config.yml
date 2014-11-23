@@ -8,9 +8,7 @@ url: "http://austinzentz.com" # the base hostname & protocol for your site
 github_username:  aust1nz
 linkedin_username: austin.zentz
 linkedin_url: austin-zentz/14/269/470
-twitter_username: 
 
 # Build settings
 markdown: kramdown
-port: 3000
 exclude: ['vendor']
