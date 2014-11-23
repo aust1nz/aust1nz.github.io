@@ -7,7 +7,7 @@ layout: default
 
   <div class="about">
     <h2>What's This?</h2>
-    <p>This is  a personal site for Austin Z. It doesn't have much now, but it's my little space on the web. Thanks for stopping by!</p>
+    <p>This is  a personal site for Austin Zentz. Thanks for stopping by!</p>
   </div>
 
   <h2>Posts</h2>
@@ -19,11 +19,9 @@ layout: default
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-        <p class="post-summary">{{ post.summary }}</p>
+        <p class="post-summary">{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
-
-  <!--<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 </div>

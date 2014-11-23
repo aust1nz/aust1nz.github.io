@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Working with D3"
-summary: "Testing some charting functions with D3."
+title:  "I Ran A Marathon!"
 date:   2014-10-29 12:12:00
 categories: data_visualization, charting, running
 
 ---
 
-#Charting Data with D3
-This is a sample post working on charting data using D3. In this case, with an inline script! Here's another sentence.
+# Data Visualization of my Marathon
+
+This post takes a look at a marathon I recently ran, using a cool charting library in Javascript called [D3.js](http://d3js.org/).
+
+Here's a quick look at my mile times.
 
 <div id="chart"></div>
 
