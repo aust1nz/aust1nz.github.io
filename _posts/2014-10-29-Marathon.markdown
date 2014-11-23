@@ -8,7 +8,7 @@ categories: data_visualization, charting, running
 ---
 
 #Charting Data with D3
-This is a sample post working on charting data using D3. In this case, with an inline script!
+This is a sample post working on charting data using D3. In this case, with an inline script! Here's another sentence.
 
 <div id="chart"></div>
 
@@ -128,7 +128,7 @@ This is a sample post working on charting data using D3. In this case, with an i
                     })
                     .attr("fill", function(d) {
                       return "rgb(0, 0, " + (d * 10) + ")";
-                    });                    
+                    });
 
                 svg.selectAll("text")
                     .data(dataset)
