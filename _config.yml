@@ -4,7 +4,7 @@ email: austin.zentz@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Rails, data analysis, projects and musings.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://austinzentz.com" # the base hostname & protocol for your site
+url: "http://www.austinzentz.com" # the base hostname & protocol for your site
 github_username:  aust1nz
 linkedin_username: austin.zentz
 linkedin_url: austin-zentz/14/269/470
@@ -12,3 +12,6 @@ linkedin_url: austin-zentz/14/269/470
 # Build settings
 markdown: kramdown
 exclude: ['vendor']
+
+sass:
+  style: :compressed

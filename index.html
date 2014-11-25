@@ -3,24 +3,28 @@ layout: default
 
 ---
 
-<div class="home">
-
-  <div class="about">
-    <h2>What's This?</h2>
-    <p>This is  a personal site for Austin Zentz. Thanks for stopping by!</p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h2>What's This?</h2>
+      <p>This is  a personal site for Austin Zentz. Thanks for stopping by!</p>
+    </div>
   </div>
 
-  <h2>Posts</h2>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>Posts</h2>
+      <ul class="post-list">
+        {% for post in site.posts %}
+          <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+            <h2>
+              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
