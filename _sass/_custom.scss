@@ -1,17 +1,72 @@
-/**
- * Grey About Box
- */
-.about {
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    background-color: $grey-color-lightest;
-    margin: 0px 20px 15px 20px;
-    padding: 10px 20px 5px 20px;
-    font-size: .85em;
+/* colors */
+$white: #fff;
+$ltgrey: #f7f7f7;
+$dkgrey: #333;
+$peach: #F7BB93;
+$ltblue: #9FB6CD;
+$dkblue: #6C7B8B;
+$cran: #8B3A3A;
+
+.content-box {
+  padding: 10px;
+  margin: 10px 5px 10px 5px;
+  box-shadow: 0px 3px 1px rgba(0,0,0,0.1);
+}
+.content-box > h1 {
+  margin-top: 10px;
+}
+.content-white {
+  background-color: $white;
+}
+.content-peach {
+  background-color: $peach;
+}
+.content-lt-blue {
+  background-color: $ltblue;
+  color: $white;
+}
+.content-white > h1 {
+  color: $peach;
+}
+.content-peach > h1 {
+  color: $white;
+}
+.content-lt-blue > h1 {
+  color: $peach;
 }
 
-@include media-query($on-palm) {
-    .about {
-        margin: 0px 0px 15px 0px;
-    }
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding: 5px 10px 5px 10px;
+    margin-bottom: 15px;
+  }
+}
+
+
+.post-link {
+  display: block;
+  font-size: 24px;
+}
+
+
+/**
+* Posts
+*/
+.post-header {
+  margin-bottom: 15px;
+}
+
+.post-title {
+  font-size: 42px;
+  letter-spacing: -1px;
+  line-height: 1;
 }

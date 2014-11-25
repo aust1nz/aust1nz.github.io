@@ -12,6 +12,7 @@ linkedin_url: austin-zentz/14/269/470
 # Build settings
 markdown: kramdown
 exclude: ['vendor']
+port: 3000
 
 sass:
   style: :compressed
