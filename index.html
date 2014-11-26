@@ -17,18 +17,16 @@ layout: default
     <div class="col-md-8">
       <div class="content-box content-white">
         <h2>Posts</h2>
-        <ul class="post-list">
           {% for post in site.posts %}
-            <li>
+            <div class="post-list">
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
               <h3>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
               </h3>
               {{ post.summary }}
-            </li>
+            </div>
           {% endfor %}
-        </ul>
       </div>
     </div>
     <div class="col-md-4">

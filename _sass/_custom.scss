@@ -39,11 +39,8 @@ $lightBlue: #A3D3FF;
 .post-list {
   margin-left: 0;
   list-style: none;
-
-  > li {
-    padding: 5px 10px 5px 10px;
-    margin-bottom: 15px;
-    background-color: lighten($lightBlue, 13%);
-    @include rounded-corners(5px);
-  }
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 15px;
+  background-color: lighten($lightBlue, 13%);
+  @include rounded-corners(5px);
 }
