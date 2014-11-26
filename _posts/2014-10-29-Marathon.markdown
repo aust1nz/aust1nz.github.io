@@ -7,140 +7,140 @@ summary: "In October, I ran a marathon. Whew! Here's some data about the run, us
 ---
 This post takes a look at a marathon I recently ran, using a cool charting library in Javascript called D3. Here's a quick look at my mile times.
 
-Hey it looks like this isn't working. Well it looks pretty terrible.
+Believe it or not, this is like 150 lines of Javascript for a puny little non-interactive table. It's like something you could put together in Excel in a minute or two. But d3.js does have some promise!
 
 <div id="chart"></div>
 
 <script type="text/javascript">
-          var w = $("#chart").width();
-          var h = Math.floor(w / 2);
+  var w = $("#chart").width();
+  var h = Math.floor(w / 2);
 
-          var marathon = [
-              { "mile": 1, "time": '9:22' },
-              { "mile": 2, "time": '7:29' },
-              { "mile": 3, "time": '7:36' },
-              { "mile": 4, "time": '6:55' },
-              { "mile": 5, "time": '7:18' },
-              { "mile": 6, "time": '6:52' },
-              { "mile": 7, "time": '7:14' },
-              { "mile": 8, "time": '7:08' },
-              { "mile": 9, "time": '7:17' },
-              { "mile": 10, "time": '7:01' },
-              { "mile": 11, "time": '7:02' },
-              { "mile": 12, "time": '7:15' },
-              { "mile": 13, "time": '7:08' },
-              { "mile": 14, "time": '7:18' },
-              { "mile": 15, "time": '7:13' },
-              { "mile": 16, "time": '7:26' },
-              { "mile": 17, "time": '7:25' },
-              { "mile": 18, "time": '7:20' },
-              { "mile": 19, "time": '7:25' },
-              { "mile": 20, "time": '7:40' },
-              { "mile": 21, "time": '7:32' },
-              { "mile": 22, "time": '7:52' },
-              { "mile": 23, "time": '8:18' },
-              { "mile": 24, "time": '7:24' },
-              { "mile": 25, "time": '9:09' },
-              { "mile": 26, "time": '9:22' },
-              { "mile": 27, "time": '8:53' }
-          ];
+  var marathon = [
+  { "mile": 1, "time": '9:22' },
+  { "mile": 2, "time": '7:29' },
+  { "mile": 3, "time": '7:36' },
+  { "mile": 4, "time": '6:55' },
+  { "mile": 5, "time": '7:18' },
+  { "mile": 6, "time": '6:52' },
+  { "mile": 7, "time": '7:14' },
+  { "mile": 8, "time": '7:08' },
+  { "mile": 9, "time": '7:17' },
+  { "mile": 10, "time": '7:01' },
+  { "mile": 11, "time": '7:02' },
+  { "mile": 12, "time": '7:15' },
+  { "mile": 13, "time": '7:08' },
+  { "mile": 14, "time": '7:18' },
+  { "mile": 15, "time": '7:13' },
+  { "mile": 16, "time": '7:26' },
+  { "mile": 17, "time": '7:25' },
+  { "mile": 18, "time": '7:20' },
+  { "mile": 19, "time": '7:25' },
+  { "mile": 20, "time": '7:40' },
+  { "mile": 21, "time": '7:32' },
+  { "mile": 22, "time": '7:52' },
+  { "mile": 23, "time": '8:18' },
+  { "mile": 24, "time": '7:24' },
+  { "mile": 25, "time": '9:09' },
+  { "mile": 26, "time": '9:22' },
+  { "mile": 27, "time": '8:53' }
+  ];
 
-          var dataset = [];
+  var dataset = [];
 
-          for (var i = 0; i < marathon.length; i++) {
-            var time = marathon[i].time;
-            var mins = parseFloat(time.substring(0, time.indexOf(":")));
-            var secs = parseFloat(time.substring(time.indexOf(":") + 1)) / 60;
-            dataset.push(mins + secs);
-          }
+  for (var i = 0; i < marathon.length; i++) {
+    var time = marathon[i].time;
+    var mins = parseFloat(time.substring(0, time.indexOf(":")));
+    var secs = parseFloat(time.substring(time.indexOf(":") + 1)) / 60;
+    dataset.push(mins + secs);
+  }
 
-          var xScale = d3.scale.ordinal()
-                          .domain(d3.range(dataset.length))
-                          .rangeRoundBands([0, w], 0.05);
+  var xScale = d3.scale.ordinal()
+  .domain(d3.range(dataset.length))
+  .rangeRoundBands([0, w], 0.05);
 
-          var yScale = d3.scale.linear()
-                          .domain([0, d3.max(dataset)])
-                          .range([0, h]);
+  var yScale = d3.scale.linear()
+  .domain([0, d3.max(dataset)])
+  .range([0, h]);
 
-          var svg = d3.select("#chart")
-                      .append("svg")
-                      .attr("width", w)
-                      .attr("height", h);
+  var svg = d3.select("#chart")
+  .append("svg")
+  .attr("width", w)
+  .attr("height", h);
 
-          svg.selectAll("rect")
-              .data(dataset)
-              .enter()
-              .append("rect")
-              .attr("x", function(d, i) {
-                return xScale(i);
-              })
-              .attr("y", function(d) {
-                return h - yScale(d);
-              })
-              .attr("width", xScale.rangeBand())
-              .attr("height", function(d) {
-                return yScale(d);
-              })
-              .attr("fill", function(d) {
-                return "rgb(0, 0, " + d3.range(dataset.length) + ")";
-              });
+  svg.selectAll("rect")
+  .data(dataset)
+  .enter()
+  .append("rect")
+  .attr("x", function(d, i) {
+    return xScale(i);
+    })
+    .attr("y", function(d) {
+      return h - yScale(d);
+      })
+      .attr("width", xScale.rangeBand())
+      .attr("height", function(d) {
+        return yScale(d);
+        })
+        .attr("fill", function(d) {
+          return "rgb(0, 0, " + d3.range(dataset.length) + ")";
+          });
 
           svg.selectAll("text")
-              .data(dataset)
-              .enter()
-              .append("text")
-              .text(function(d, i) {
-                return marathon[i].time;
-              })
-              .attr("x", function(d, i) {
-                return xScale(i) + xScale.rangeBand() / 2;
+          .data(dataset)
+          .enter()
+          .append("text")
+          .text(function(d, i) {
+            return marathon[i].time;
+            })
+            .attr("x", function(d, i) {
+              return xScale(i) + xScale.rangeBand() / 2;
               })
               .attr("y", function(d) {
                 return h - yScale(d) + 14;
-              })
-              .attr("font-family", "sans-serif")
-              .attr("font-size", "11px")
-              .attr("fill", "white")
-              .attr("text-anchor", "middle");
+                })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("fill", "white")
+                .attr("text-anchor", "middle");
 
-          d3.select("p")
-              .on("click", function() {
-                var numValues = dataset.length;
-                dataset = [];
-                for (var i = 0; i < numValues; i++) {
-                  var newNumber = Math.floor(Math.random() * 25);
-                  dataset.push(newNumber);
-                }
+                d3.select("p")
+                .on("click", function() {
+                  var numValues = dataset.length;
+                  dataset = [];
+                  for (var i = 0; i < numValues; i++) {
+                    var newNumber = Math.floor(Math.random() * 25);
+                    dataset.push(newNumber);
+                  }
 
-                svg.selectAll("rect")
-                    .data(dataset)
-                    .transition()
-                    .delay(function(d, i) {
-                      return i / dataset.length * 1000;
+                  svg.selectAll("rect")
+                  .data(dataset)
+                  .transition()
+                  .delay(function(d, i) {
+                    return i / dataset.length * 1000;
                     })
                     .duration(500)
                     .attr("y", function(d) {
                       return h - yScale(d);
-                    })
-                    .attr("height", function(d) {
-                      return yScale(d);
-                    })
-                    .attr("fill", function(d) {
-                      return "rgb(0, 0, " + (d * 10) + ")";
-                    });
+                      })
+                      .attr("height", function(d) {
+                        return yScale(d);
+                        })
+                        .attr("fill", function(d) {
+                          return "rgb(0, 0, " + (d * 10) + ")";
+                          });
 
-                svg.selectAll("text")
-                    .data(dataset)
-                    .transition()
-                    .delay(function(d, i) {
-                      return i / dataset.length * 1000;
-                    })
-                    .duration(500)
-                    .text(function(d) {
-                      return d;
-                    })
-                    .attr("y", function(d) {
-                      return h - yScale(d) + 14;
-                    })
-              });
-</script>
+                          svg.selectAll("text")
+                          .data(dataset)
+                          .transition()
+                          .delay(function(d, i) {
+                            return i / dataset.length * 1000;
+                            })
+                            .duration(500)
+                            .text(function(d) {
+                              return d;
+                              })
+                              .attr("y", function(d) {
+                                return h - yScale(d) + 14;
+                                })
+                                });
+                              </script>

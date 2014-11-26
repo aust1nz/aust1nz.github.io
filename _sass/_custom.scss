@@ -1,44 +1,39 @@
-/* colors */
-$white: #fff;
-$ltgrey: #f7f7f7;
-$dkgrey: #333;
-$peach: #F7BB93;
-$ltblue: #9FB6CD;
-$dkblue: #6C7B8B;
-$cran: #8B3A3A;
-
-.content-box {
-  padding: 10px;
-  margin: 5px 0px 5px 0px;
-  box-shadow: 0px 3px 1px rgba(0,0,0,0.1);
-}
-.content-box > h1 {
-  margin-top: 10px;
-}
-.content-white {
-  background-color: $white;
-}
-.content-peach {
-  background-color: $peach;
-}
-.content-lt-blue {
-  background-color: $ltblue;
-  color: $white;
-}
-.content-white > h1 {
-  color: $peach;
-}
-.content-peach > h1 {
-  color: $white;
-}
-.content-lt-blue > h1 {
-  color: $peach;
-}
-
 @mixin rounded-corners($radius) {
   border-radius: $radius;
   -moz-border-radius: $radius;
   -webkit-border-radius: $radius;
+}
+
+/* colors */
+$slate: rgb(82, 106, 127);
+$white: #FFF;
+$lightBlue: #A3D3FF;
+
+/**
+* Content Boxes
+*/
+.content-box {
+  padding: 10px;
+  margin: 5px 0px 5px 0px;
+  box-shadow: 0px 3px 1px rgba(0,0,0,0.1);
+  background-color: $white;
+}
+
+.content-box > h1 {
+  margin-top: 10px;
+  color: $slate;
+}
+
+/**
+* Posts
+*/
+.post-header {
+  margin-bottom: 15px;
+}
+
+.post-link {
+  display: block;
+  font-size: 24px;
 }
 
 .post-list {
@@ -48,20 +43,7 @@ $cran: #8B3A3A;
   > li {
     padding: 5px 10px 5px 10px;
     margin-bottom: 15px;
-    background-color: lighten($ltblue, 25%);
+    background-color: lighten($lightBlue, 13%);
     @include rounded-corners(5px);
   }
-}
-
-.post-link {
-  display: block;
-  font-size: 24px;
-}
-
-
-/**
-* Posts
-*/
-.post-header {
-  margin-bottom: 15px;
 }

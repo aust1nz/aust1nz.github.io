@@ -9,7 +9,7 @@ categories: jekyll
 [Jekyll](http://jekyllrb.com/) is a neat package for hosting mostly static content on the web. It serves a rather specific niche: it's for blogs or portfolio sites where the person updating the content is also comfortable using a text editor, markdown and a console window. I think that's why you see lots of [Jekyll](http://tom.preston-werner.com/) [generated](https://training.github.com/) [sites](http://schacon.github.io/) which are specifically about programming concerns. (They also seem to be mostly out of date, but we'll set that aside for now.)
 
 
-####So, what *is* Jekyll, exactly?
+###So, what *is* Jekyll, exactly?
 
 Basically, it's a Ruby gem that helps you generate a bunch of static webpages. Because they are static pages, they don't have to be connected to a database, and the web server can just serve HTML pages instead of building specific pages for each user.
 
@@ -27,7 +27,7 @@ $ cd myblog
   <li><p>Visit the site!</p>
       <p>By default, it's at localhost:4000.</p></li></ol>
 
-####So, why use Jekyll instead of the other options?
+###Why use Jekyll instead of the other options?
 
 There are a bunch of other easy ways to get a blog site posted. What's the advantage of using this tool? Here are a few alternate considerations, and some reasons to stick with Jekyll.
 
