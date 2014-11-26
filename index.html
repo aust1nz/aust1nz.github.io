@@ -5,16 +5,16 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-12">
       <div class="content-box content-white">
-        <h2>What's This?</h2>
+        <h1>What's This?</h1>
         <p>This is  a personal site for Austin Zentz. Thanks for stopping by!</p>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-7 col-md-offset-1">
+    <div class="col-md-8">
       <div class="content-box content-white">
         <h2>Posts</h2>
         <ul class="post-list">
@@ -22,17 +22,18 @@ layout: default
             <li>
               <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-              <h2>
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
+              <h3>
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h3>
+              {{ post.summary }}
             </li>
           {% endfor %}
         </ul>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-4">
       <div class="content-box content-white">
-        Sign up for my mailing list
+        Sign up for my mailing list:
       </div>
     </div>
   </div>

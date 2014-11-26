@@ -3,8 +3,11 @@ layout: post
 title:  "I Ran A Marathon!"
 date:   2014-10-29 12:12:00
 categories: running data_visualization
+summary: "In October, I ran a marathon. Whew! Here's some data about the run, using the D3.js library."
 ---
 This post takes a look at a marathon I recently ran, using a cool charting library in Javascript called D3. Here's a quick look at my mile times.
+
+Hey it looks like this isn't working. Well it looks pretty terrible.
 
 <div id="chart"></div>
 
