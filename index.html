@@ -13,28 +13,4 @@ layout: default
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-md-8">
-      <div class="content-box content-white">
-        <h2>Posts</h2>
-          {% for post in site.posts %}
-            <div class="post-list">
-              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-              <h3>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h3>
-              {{ post.summary }}
-            </div>
-          {% endfor %}
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="content-box content-white">
-        <h4>About me:</h4>
-        <img src="images/profile.jpg" alt="Profile P" class="img-thumbnail">
-        <p>I'm an open-source enthusiast currently digging deeper into Rails and web-app development. In my day job, I work to improving DC Public School's data analysis and develop applications for teachers and staff.</p>
-      </div>
-    </div>
-  </div>
 </div>

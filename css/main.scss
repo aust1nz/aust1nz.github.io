@@ -2,14 +2,7 @@
 ---
 
 @charset "utf-8";
-$grey-color-lightest: #111111;
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "bootstrap",
-        "custom"
-;
 
-body {
-  padding-top: 50px;
-  background-image: url(../images/halftone.png);
-}
+@import
+        "base"
+;
