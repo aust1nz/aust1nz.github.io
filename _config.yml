@@ -1,9 +1,9 @@
 # Site settings
 title: Austin Zentz
 email: austin.zentz@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   Rails, data analysis, projects and musings.
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: ""
 url: "http://www.austinzentz.com" # the base hostname & protocol for your site
 github_username:  aust1nz
 linkedin_username: austin.zentz
@@ -18,9 +18,3 @@ sass:
   style: :compressed
 
 # Color settings (hex-codes without the leading hash-tag)
-color:
-  primary: 18bc9c #80B3FF
-  secondary: 2c3e50 #FD6E8A
-  secondary-dark: 233140 #A2122F
-
-include: ['_projects']

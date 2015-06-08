@@ -1,0 +1,45 @@
+{% for post in site.posts %}
+  <div class="modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">{{ post.title }}</h2>
+        </div>
+          <div class="modal-body">
+            <ul class="list-inline item-details">
+              <li>Project: <strong><a href="{{ post.live }}">{{ post.client }}</a></strong></li>
+              <li>Skills: {% for skill in post.skills %}<code>{{ skill }}</code> {% endfor %}</li>
+            </ul>
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                {% for img in post.images %}
+                  <div class="item {% if forloop.index == 1 %}active{% endif %}">
+                    <img src="img/portfolio/{{ img }}">
+                  </div>
+                {% endfor %}
+              </div>
+
+              <ol class="carousel-indicators">
+                {% for img in post.images %}
+                  <li data-target="#carousel-example-generic" data-slide-to="{{ forloop.index0 }}" {% if forloop.index == 1 %}class="active"{% endif %}></li>
+                {% endfor %}
+              </ol>
+
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+          </div>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+{% endfor %}

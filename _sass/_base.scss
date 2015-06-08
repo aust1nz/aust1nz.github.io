@@ -1,5 +1,123 @@
-/*!
- * Start Bootstrap - Freelancer Bootstrap Theme (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
+$color-primary: #80B3FF;
+$color-secondary: SlateGray;
+$color-secondary-dark: #A2122F;
+$normal: 20px;
+$section-spacing: 100px;
+
+$heading-font: 'Source Sans Pro', sans-serif;
+
+body {
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+p {
+  font-size: $normal;
+  
+  .small {
+    font-size: $normal * 0.75;
+  }
+}
+
+hr {
+  width: 50%;
+  height: 7px;
+  color: white;
+  background-color: white;
+}
+
+/* navbar styling */
+.navbar {
+  
+  font-family: $heading-font;
+}
+
+.navbar-default {
+  background: $color-secondary;
+  opacity: 0.95;
+  border-color: black;
+  
+  .navbar-brand, .navbar-nav>li>a {
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-brand {
+    font-size: $normal * 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+}
+
+/* styling for the special header section */
+header {
+  color: white;
+  background-color: $color-primary;
+  text-align: center;
+  
+  .container {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing / 2;
+  }
+  
+  .intro-text {
+    font-family: $heading-font;
+
+    .name {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.5em;
+      letter-spacing: 2.5px;
+    }
+    
+    .skills {
+      font-size: 1.2em;
+    }
+  }
+
+  
+  @media (min-width: 768px) {
+    .container {
+      padding-top: $section-spacing * 2;
+      padding-bottom: $section-spacing;
+    }
+    
+    .intro-text {
+      .name {
+        font-size: 5em;
+      }
+      .skills {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
+
+/* styling for the rest of the sections */
+section {
+  padding-bottom: $section-spacing;
+  padding-top: $section-spacing;
+  
+  h2 {
+    font-family: $heading-font;
+    font-size: 4em;
+  }
+}
+
+section.success {
+  color: #fff;
+  background-color: $color-primary;
+}
+
+/* footer styling */
+footer {
+  background-color: lighten($color-secondary, 10%);
+  padding-bottom: $section-spacing / 2;
+  padding-top: $section-spacing / 4;
+  
+  .fa-lg {
+    font-size: 2.5em;
+  }
+  
+}
