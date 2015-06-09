@@ -1,0 +1,22 @@
+.navbar {
+  
+  font-family: $heading-font;
+}
+
+.navbar-default {
+  background: $color-secondary;
+  opacity: 0.95;
+  border-color: black;
+  
+  .navbar-brand, .navbar-nav>li>a {
+    color: white;
+    letter-spacing: 2px;
+  }
+  
+  .navbar-brand {
+    font-size: $normal * 1.5;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+}

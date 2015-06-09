@@ -1,0 +1,42 @@
+header {
+  color: white;
+  background-color: $color-primary;
+  text-align: center;
+  
+  .container {
+    padding-top: $section-spacing;
+    padding-bottom: $section-spacing / 2;
+  }
+  
+  .intro-text {
+    font-family: $heading-font;
+
+    .name {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2.5em;
+      letter-spacing: 2.5px;
+    }
+    
+    .skills {
+      font-size: 1.2em;
+    }
+  }
+
+  
+  @media (min-width: 768px) {
+    .container {
+      padding-top: $section-spacing * 2;
+      padding-bottom: $section-spacing;
+    }
+    
+    .intro-text {
+      .name {
+        font-size: 5em;
+      }
+      .skills {
+        font-size: 1.5em;
+      }
+    }
+  }
+}
