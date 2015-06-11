@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 4
+date: 2015-05-25
+title: Recipe-finding/ list-building Website
+
+skills: ['Ruby', 'Rails']
+description: This application allows users to enter or star recipes, and helps them build a shopping list based on the recipes that they chose.
+
+---

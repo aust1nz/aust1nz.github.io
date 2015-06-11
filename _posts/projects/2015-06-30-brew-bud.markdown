@@ -1,0 +1,10 @@
+---
+layout: default
+modal-id: 5
+date: 2015-05-25
+title: BrewBud (Homebrewing Assistant)
+
+skills: ['Ruby', 'Rails']
+description: A homebrewer's companion, this application allows users to enter, review and rate their own beer making recipes.
+
+---

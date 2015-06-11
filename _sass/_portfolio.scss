@@ -11,6 +11,7 @@
     position: relative;
     margin: 0 auto;
     max-width: 400px;
+    text-decoration: none;
 
     .caption {
       position: absolute;
@@ -38,4 +39,19 @@
       color: #fff;
     }
   }
+}
+
+.portfolio-title {
+  font-size: 3em;
+  background-color: lighten($color-secondary, 15%);
+  font-family: $heading-font;
+  word-spacing: 100px;
+  color: #fff;
+  padding-left: 10px;
+
+}
+
+.portfolio-alt {
+  @extend .portfolio-title;
+  background-color: lighten($color-primary, 10%)
 }

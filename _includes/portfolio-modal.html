@@ -7,8 +7,8 @@
           <h2 class="modal-title">{{ post.title }}</h2>
         </div>
           <div class="modal-body">
+            <p class="small">{{ post.description }}</p>
             <ul class="list-inline item-details">
-              <li>Project: <strong><a href="{{ post.live }}">{{ post.client }}</a></strong></li>
               <li>Skills: {% for skill in post.skills %}<code>{{ skill }}</code> {% endfor %}</li>
             </ul>
 
