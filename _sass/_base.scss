@@ -19,7 +19,8 @@ body {
 
 p {
   font-size: $normal;
-  
+  margin-bottom: $normal * 2;
+  margin-top: $normal;
   .small {
     font-size: $normal * 0.75;
   }
@@ -32,3 +33,8 @@ hr {
   background-color: white;
 }
 
+.btn:focus,
+.btn:active,
+.btn.active {
+    outline: 0;
+}

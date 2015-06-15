@@ -5,9 +5,42 @@
         <h2>Contact</h2>
       </div>
     </div>
+    
     <div class="row">
-      <div class="col-lg-12">
-        <p>Contact section is on the way!</p>
+      <div class="col-lg-6 col-lg-offset-3">
+        <p>
+          Interested in getting in touch with me? Just fill out the form
+          below with a brief message, and I'll respond to you soon.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Hidden thank you message that only displays after submitting the form -->
+    <div class="row">
+      <div class="col-lg-6 col-lg-offset-3">
+        <p class="hidden" id="thanks-message">Thanks for the message! I'll be getting in touch with you soon.</p>
+      </div>
+    </div>
+    
+    <!-- Formspree-powered contact form -->
+    <div class="row" id="contact-form">
+      <div class="col-lg-6 col-lg-offset-3">
+        <form class="form" action="//formspree.io/austin.zentz@gmail.com" method="POST">
+          <input type="hidden" name="_next" value="#contact?confirm=true" />
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input class="form-control" type="email" name="_replyto" placeholder="email@address.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" name="message" placeholder="Message" rows="5"></textarea>
+          </div>
+          <input class="btn btn-primary" type="submit" value="Send">
+      </form>
       </div>
     </div>
   </div>

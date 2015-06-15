@@ -10,5 +10,15 @@ section {
 
 section.success {
   color: #fff;
-  background-color: $color-primary;
+  background-color: lighten($color-primary, 25%);
+}
+
+.img-grayscale {
+  margin: 0 auto;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+
 }

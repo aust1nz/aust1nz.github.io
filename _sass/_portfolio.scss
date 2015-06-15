@@ -37,17 +37,25 @@
       text-align: center;
       font-size: 20px;
       color: #fff;
+      
+      @media(max-width:767px) {
+        display: none;
+      }
     }
   }
 }
 
 .portfolio-title {
-  font-size: 3em;
+  font-size: 1.5em;
   background-color: lighten($color-secondary, 15%);
   font-family: $heading-font;
-  word-spacing: 100px;
   color: #fff;
   padding-left: 10px;
+  
+  @media(min-width:767px) {
+    font-size: 3em;
+    word-spacing: 100px;
+  }
 
 }
 

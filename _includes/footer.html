@@ -1,27 +1,41 @@
 <footer>
   <div class="container">
     <div class="row">
-      <hr/>
-      <div class="col-md-6 col-md-offset-3 text-center">
+      <div class="col-lg-4 text-center">
+        <h2>Location</h2>
+        <p>Washington, DC</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h2>Around the Web</h2>
         <ul class="list-inline">
           <li>
-            <a target="_blank" href="https://www.linkedin.com/in/austinzentz">
-              <i class="fa fa-linkedin fa-lg"></i>
+            <a target="_blank" class="btn-social btn-outline" href="https://www.linkedin.com/in/austinzentz">
+              <i class="fa fa-fw fa-linkedin"></i>
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.github.com/aust1nz">
-              <i class="fa fa-github fa-lg"></i>
+            <a target="_blank" class="btn-social btn-outline" href="https://www.github.com/aust1nz">
+              <i class="fa fa-fw fa-github"></i>
             </a>
           </li>
         </ul>
-        <p class="small">Built with <i class="fa fa-heart-o"></i> by Austin Zentz. ©{{ site.time | date: '%Y' }}</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h2>Email</h2>
+        <p><a href="mailto:austin.zentz@gmail.com">austin.zentz@gmail.com</a></p>
       </div>
     </div>
+    <div class="row text-center">
+      <hr/>
+      <p>
+        <small>
+          Built with <i class="fa fa-heart-o"></i> by Austin Zentz. ©{{ site.time | date: '%Y' }}
+        </small>
+      </p>
+    </div>
   </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <script src="{{ "/js/custom.js" }}"></script>
-
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="{{ "/js/custom.js" }}"></script>
