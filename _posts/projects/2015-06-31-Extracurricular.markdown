@@ -6,5 +6,5 @@ title: DCPS Extracurricular Applications
 skills: ['jQuery', 'Bootstrap', 'QuickBase', 'API', 'AJAX']
 description: Built an online application for summer school, afterschool and coaching positions with DCPS; including a front-facing job board for candidates which interacts with the QuickBase database as a single-page application.
 
-images: [extracurricular.png]
+images: ['extracurricular-1.PNG', 'extracurricular-2.PNG', 'extracurricular-3.PNG', 'extracurricular-4.PNG']
 ---

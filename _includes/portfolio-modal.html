@@ -16,7 +16,7 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 {% for img in post.images %}
-                  <div class="text-center item {% if forloop.index == 1 %}active{% endif %}">
+                  <div class="item {% if forloop.index == 1 %}active{% endif %}">
                     <img class="img-thumbnail img-responsive" src="img/portfolio/{{ img }}">
                   </div>
                 {% endfor %}
