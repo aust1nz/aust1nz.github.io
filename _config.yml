@@ -2,11 +2,8 @@
 title: Austin Zentz
 email: austin.zentz@gmail.com
 description: "Austin Zentz is a developer and analyst for District of Columbia Public Schools."
+url: "http://www.austinzentz.com"
 baseurl: ""
-url: "http://www.austinzentz.com" # the base hostname & protocol for your site
-github_username:  aust1nz
-linkedin_username: austin.zentz
-linkedin_url: austin-zentz/14/269/470
 
 # Build settings
 markdown: kramdown
@@ -16,4 +13,5 @@ port: 3000
 sass:
   style: :compressed
 
-# Color settings (hex-codes without the leading hash-tag)
+gems:
+  - jekyll-sitemap

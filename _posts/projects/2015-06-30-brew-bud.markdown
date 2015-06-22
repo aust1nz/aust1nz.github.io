@@ -1,5 +1,6 @@
 ---
 layout: default
+sitemap: false
 modal-id: 5
 date: 2015-05-25
 title: BrewBud (Homebrewing Assistant)

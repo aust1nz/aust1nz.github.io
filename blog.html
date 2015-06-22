@@ -1,0 +1,31 @@
+---
+layout: default
+
+---
+
+<header class="condensed">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="intro-text">
+          <span class="name">Posts</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section class="condensed">
+  <div class="container">
+    <div class="row">
+      {% for post in site.posts %}
+        {% unless post.path contains "projects" %}
+          <div class="col-md-8 col-md-offset-2">
+            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
+            <p>{{ post.date | date: " %B %-d, %Y" }}: {{ post.excerpt | strip_html  }}</p>
+          </div>
+        {% endunless %}
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>

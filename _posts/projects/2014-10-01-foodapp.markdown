@@ -1,5 +1,6 @@
 ---
 layout: default
+sitemap: false
 modal-id: 4
 date: 2015-05-25
 title: Recipe-finding/ list-building Website

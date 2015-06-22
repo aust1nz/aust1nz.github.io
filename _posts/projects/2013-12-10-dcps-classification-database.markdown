@@ -1,5 +1,6 @@
 ---
 layout: default
+sitemap: false
 modal-id: 1
 title: DCPS Classification Database
 

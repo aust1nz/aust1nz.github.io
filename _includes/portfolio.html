@@ -8,17 +8,19 @@
     </div>
     <div class="row">
       {% for project in site.posts %}
-        {% capture thecycle %}{% cycle 'portfolio-title', 'portfolio-alt' %}{% endcapture %}
-        <div class="col-sm-4 portfolio-item">
-          <a href="#portfolioModal-{{ project.modal-id }}" class="portfolio-link" data-toggle="modal">
-            <div class="caption img-rounded">
-              <div class="caption-content">
-                <i class="fa fa-search-plus fa-3x"></i>
+        {% if project.path contains "projects" %}
+          {% capture thecycle %}{% cycle 'portfolio-title', 'portfolio-alt' %}{% endcapture %}
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal-{{ project.modal-id }}" class="portfolio-link" data-toggle="modal">
+              <div class="caption img-rounded">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus fa-3x"></i>
+                </div>
               </div>
-            </div>
-            <div class="{{thecycle}} img-rounded">{{ project.title }}</div>
-          </a>
-        </div>
+              <div class="{{thecycle}} img-rounded">{{ project.title }}</div>
+            </a>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
