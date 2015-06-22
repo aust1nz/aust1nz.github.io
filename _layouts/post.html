@@ -8,24 +8,26 @@
     {% include navbar.html %}
     
     <section>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-4">
-          <h3>{{ page.title }}</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-4">
+            <h3>{{ page.title }}</h3>
+          </div>
         </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-md-6 col-md-offset-4">
-          <p>Posted on {{ page.date | date: " %B %-d, %Y" }}</p>
-          
-          {{ content }}
-          
-          <p class="about-text"><a href="{{ baseurl }}">Austin Zentz</a> is a
-          developer and analyst who lives in Washington, DC. He works with DC
-          Public Schools focusing on employee data systems and analysis.
-          <a href="{{ baseurl }}/#contact">Contact</a></a></p>
+        
+        <div class="row">
+          <div class="col-md-6 col-md-offset-4">
+            <p>Posted on {{ page.date | date: " %B %-d, %Y" }}</p>
+            
+            {{ content }}
+            
+            <p class="about-text"><a href="{{ baseurl }}">Austin Zentz</a> is a
+            developer and analyst who lives in Washington, DC. He works with DC
+            Public Schools focusing on employee data systems and analysis.
+            <a href="{{ baseurl }}/#contact">Contact</a></a></p>
+          </div>
         </div>
-      </div>
+      </container>
     </section>
     
     {% include footer.html %}
