@@ -2,7 +2,7 @@
 layout: post
 title: Building a Portfolio Site with Jekyll
 ---
-I took me a surprisingly long time to decide how to put together this portfolio website. I build apps for the web every day, so you'd think it would be easy to put something together, but my surplus of options made it hard to get started.
+It took me a surpisingly long time to decide how to put together this portfolio website. I build apps for the web every day, so you'd think it would be easy to put something together, but my surplus of options made it hard to get started.
 
 A web framework like Ruby on Rails felt like overkill for a simple, mostly static site, but I wanted to get my hands dirtier than just slapping together a Wordpress theme. I finally put this site together using [Jekyll](http://jekyllrb.com/), a static site generator built in Ruby, and thought I'd share a few reasons behind my decision.
 
