@@ -1,7 +1,7 @@
 $color-primary: #0065a4;
 $color-secondary: SlateGray;
 $color-secondary-dark: #80B3FF;
-$normal: 16px;
+$normal: 15px;
 $section-spacing: 100px;
 
 $heading-font: 'Source Sans Pro', sans-serif;
@@ -15,10 +15,10 @@ $heading-font: 'Source Sans Pro', sans-serif;
 body {
   padding-top: 50px;
   overflow-x: hidden;
+  font-size: $normal;
 }
 
 p {
-  font-size: $normal;
   margin-bottom: $normal;
   margin-top: $normal;
   .small {

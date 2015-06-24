@@ -15,6 +15,7 @@ section {
   h4 {
     font-family: $heading-font;
     font-size: 1.8em;
+    padding-top: $section-spacing / 4;
   }
   
   @media(min-width:767px) {
