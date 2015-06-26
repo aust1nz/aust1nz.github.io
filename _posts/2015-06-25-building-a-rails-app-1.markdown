@@ -21,4 +21,4 @@ And here's what it won't be:
 * A full-fledged tutorial. I'm planning on skipping steps or fast forwarding - I'd recommend Michael Hartl's [Rails Tutorial](https://www.railstutorial.org/book) if that's what your're after
 * An expert's guide to best practices: I'm planning on outlining roadblocks I face and possibly the consequences of poor decisions I make. I'm not an expert at production-ready Rails applications, so don't come here for this!
 
-Onward, to market research and planning!
+Onward, to [market research and planning]({% post_url 2015-06-26-market-research %})!
