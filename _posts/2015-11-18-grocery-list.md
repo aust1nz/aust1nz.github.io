@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Market Research: Awash in Job Boards"
+title: "Solving a Problem: Building a Grocery Shopping List"
 draft: false
 ---
-
-# Testing
+## Building a Solution
+Hey there, friendly blog readers! If you keep up with 
