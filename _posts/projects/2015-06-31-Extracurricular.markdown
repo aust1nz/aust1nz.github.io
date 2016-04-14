@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 sitemap: false
 modal-id: 6
 title: DCPS Extracurricular Applications

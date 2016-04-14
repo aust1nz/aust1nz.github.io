@@ -15,3 +15,7 @@ sass:
 
 gems:
   - jekyll-sitemap
+
+collections:
+  projects:
+    output: true

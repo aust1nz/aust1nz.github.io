@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 sitemap: false
 modal-id: 3
 date: 2015-05-27

@@ -1,29 +1,25 @@
 ---
 layout: base
-
 ---
-
 <header class="condensed">
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
         <div class="intro-text">
-          <span class="name">Posts</span>
+          <span class="name">Projects</span>
         </div>
       </div>
     </div>
   </div>
 </header>
+
 <section class="condensed">
   <div class="container">
     <div class="row">
-      {% for post in site.posts %}
-        {% unless post.path contains "projects" or post.draft %}
+      {% for project in site.projects %}
           <div class="col-md-8 col-md-offset-2">
-            <h3><a href="{{post.url}}">{{ post.title }}</a></h3>
-            <p>{{ post.date | date: " %B %-d, %Y" }}: {{ post.excerpt | strip_html  }}</p>
+            <h3><a href="{{ project.url }}">{{ project.name }}</a></h3>
           </div>
-        {% endunless %}
       {% endfor %}
       </div>
     </div>
