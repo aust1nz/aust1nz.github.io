@@ -43,3 +43,13 @@ $("#contact-form").validate({
     });
   }
 });
+
+$(".click-gif").click(function () {
+  var source = $(this).attr("src").split('.').shift();
+  var extension = $(this).attr("src").split('.').pop();
+  if (extension == "png") {
+    $(this).attr("src", source + '.gif');
+  } else {
+    $(this).attr("src", source + '.png');
+  }
+});
