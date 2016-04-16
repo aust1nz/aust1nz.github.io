@@ -44,6 +44,8 @@ $("#contact-form").validate({
   }
 });
 
+// This function allows images with the 'click-gif' tag to toggle between gif and png.
+// There must be two images in the same directory with the same name (except extensions)
 $(".click-gif").click(function () {
   var source = $(this).attr("src").split('.').shift();
   var extension = $(this).attr("src").split('.').pop();
