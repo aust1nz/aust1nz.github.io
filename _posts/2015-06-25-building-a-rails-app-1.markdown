@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Building a Rails App, part 1"
-draft: false
+draft: true
 ---
 I've been learning all about developing with [Rails](http://rubyonrails.org/) for the past couple of years, but I've never built anything close to [complete](http://azfoodapp.herokuapp.com) or [production-ready](http://brewbud.herokuapp.com). In this series of posts, I'm hoping to outline an attempt to build a free and open source Rails application -- in my case, a job board applicant-tracking system.
 

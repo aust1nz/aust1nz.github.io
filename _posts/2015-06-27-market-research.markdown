@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Market Research: Awash in Job Boards"
-draft: false
+draft: true
 ---
 This is my second post in a [series]({% post_url 2015-06-25-building-a-rails-app-1 %}) where I attempt to build a job board and applicant tracking system in Rails from scratch. So far, I haven't written a line of code. Today, I'll take a look at the vast landscape of competitors for this purpose and take a smaller look at the actual use of open-source apps. Next post, I'll start thinking about how to plan for and design the first steps of this project.
 
