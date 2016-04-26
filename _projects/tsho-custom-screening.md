@@ -21,10 +21,30 @@ __Results:__ Our hiring managers engage with the system earlier and more frequen
 </div>
 </div>
 
-_(Click on the pictures with play buttons to see a GIF. __Please Note:__ The posting listed here is an example job, and the applications below are for example candidates.!)_
+#### Job Setup
+
+When a hiring manager first selects a position that they will be screening, they are automatically redirected to a job setup page. On this page, they can indicate which stages they will follow in their hiring process -- for example, a resume review, followed by a phone interview, followed by an in-person interview. The dashboard tabs for this job would then reflect this decision.
+
+Our system supports as little as one stage and up to seven, so hiring managers are able to implement a process that is appropriate for their team and for the level of the position.
+
+_(Click on the any of the pictures with play buttons to see a GIF.)_ __Please Note:__ The posting listed here is an example job, and the applications below are for example candidates.!
 
 ![job selection](/img/portfolio/candidate-selection/select-job.png){: .img-responsive .img-thumbnail .click-gif}
 
+#### Candidate Details
+
+The dashboard is designed so that hiring managers can quickly review the most important details about a candidate. If the candidate is a current employee, a click-over box appears with details about his/her current position. If the candidate included a cover letter, that's quickly visible as well, and all candidates have links to PDF versions of their resumes.
+
+As screeners make decisions, they can also capture or review notes about the process.
+
 ![view candidate details](/img/portfolio/candidate-selection/candidate-details.png){: .img-responsive .img-thumbnail .click-gif}
 
+#### Quick Decision-Making
+
+Once screeners make a decision about each candidate, they can quickly pass the candidate to the next stage, or choose to reject the candidate. These decisions will track candidates in the appropriate tabs, and once candidates make it to the final 'Passed Screening' phase, they begin the hiring process.
+
 ![make screening decisions](/img/portfolio/candidate-selection/screening-decisions.png){: .img-responsive .img-thumbnail .click-gif}
+
+### Technology Stack
+
+This dashboard is a subset of DCPS's recruitment and selection data system, which runs in Salesforce. These pages are built in Visualforce, with heavy reliance on [`apex:actionSupport`](https://developer.salesforce.com/docs/atlas.en-us.pages.meta/pages/pages_compref_actionSupport.htm) to update data without full page refreshes, and a few pieces of custom Javascript. It relies on robustly tested custom Apex controllers. The visual style was created using the [Bootstrap](http://getbootstrap.com/) CSS framework.
