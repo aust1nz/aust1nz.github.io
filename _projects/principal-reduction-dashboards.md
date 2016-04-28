@@ -47,3 +47,7 @@ In the unfortunate circumstances where there are more current staff members than
 Finally, we've provided principals with a summary of any staff reductions likely to happen at their schools. This page looks at the net loss of positions at each school, and displays the lowest-scoring staff members. By showing the implications in real time, the application prepares principals for any tough conversations and helps them flag any possible mistakes.
 
 ![reduction rubrics](/img/portfolio/reduction/potential-reductions.png){: .img-responsive .img-thumbnail}
+
+#### Technology Stack
+
+The site and controllers for the reduction rubrics are created using Angular.js, with Bootstrap as a CSS framework. The back-end database used is QuickBase, and the application communicates with QuickBase using its Javascript API.
