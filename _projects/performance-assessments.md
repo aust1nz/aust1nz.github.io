@@ -24,15 +24,23 @@ __Results:__ The redesign helped push on-time completion to new highs - essentia
 
 Dashboards are built with specific users in mind. New employees have optional performance assessment tasks, while most employees have options to submit a self-assessment, upward feedback of their manager, or to read their manager's assessment of their work. Meanwhile, managers have an additional dashboard with information on each of their employees, as demonstrated below.
 
+![performance dashboard](/img/portfolio/performance-evaluations/dashboard.png){: .img-responsive .img-thumbnail .click-gif}
+
 #### Submitting Assessments
 
 The performance assessments themselves are currently set up as simple text-boxes, but with a modular design that will allow future assessments to use numeric ratings or additional framing text.
 
+![performance dashboard](/img/portfolio/performance-evaluations/assessment.png){: .img-responsive .img-thumbnail }
+
 Additionally, when managers submit assessments for their employees, they can see the employees' self-assessment, along with any upward feedback submitted about the person in question.
+
+![performance dashboard](/img/portfolio/performance-evaluations/complete-assessment.png){: .img-responsive .img-thumbnail .click-gif}
 
 #### System Overview
 
 Office directors are also able to access pages which show them their office's overall completion rate, and can download these pages as spreadsheets or click names to begin emails with reminders.
+
+![performance dashboard](/img/portfolio/performance-evaluations/office-summary.png){: .img-responsive .img-thumbnail }
 
 #### Technology Stack
 
