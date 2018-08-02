@@ -1,6 +1,6 @@
 ---
 layout: projects
-name: Central Office Performance Evaluations
+title: Central Office Performance Evaluations
 project_date: Spring 2015
 completion_date: 2015-03-01
 description: Intuitive performance assessment dashboard for central office staff to deliver and receive feedback.

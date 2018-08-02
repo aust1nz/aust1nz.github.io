@@ -1,6 +1,6 @@
 ---
 layout: projects
-name: School Budget Tool
+title: School Budget Tool
 project_date: Winter 2016-2017
 completion_date: 2017-01-01
 description: A full-service budgeting tool for school principals at DCPS to review school budgeting costs and plan for upcoming school years.

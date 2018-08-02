@@ -1,6 +1,6 @@
 ---
 layout: projects
-name: Principal Candidate Screening
+title: Principal Candidate Screening
 project_date: Summer 2014
 completion_date: 2014-06-01
 description: An easy way for principals to match candidates to vacancies.
