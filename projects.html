@@ -22,13 +22,14 @@ layout: base
 
       {% assign projects = site.projects | sort: 'completion_date' %}
       {% for project in projects reversed %}
-        <div class="col-md-8 col-md-offset-2">
-          <h4 class="section-header">
-            <a href="{{ project.url }}">{{ project.title }}</a> 
-            <!-- <small>({{ project.project_date }})</small> -->
-          </h4>
-          <p>{{ project.description }}</p>
-        </div>
+        {% if project.status == "Published" %}
+          <div class="col-md-8 col-md-offset-2">
+            <h4 class="section-header">
+              <a href="{{ project.url }}">{{ project.title }}</a> 
+            </h4>
+            <p>{{ project.description }}</p>
+          </div>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
