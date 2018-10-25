@@ -24,7 +24,7 @@ layout: base
       {% for project in projects reversed %}
         <div class="col-md-8 col-md-offset-2">
           <h4 class="section-header">
-            <a href="{{ project.url }}">{{ project.name }}</a> 
+            <a href="{{ project.url }}">{{ project.title }}</a> 
             <!-- <small>({{ project.project_date }})</small> -->
           </h4>
           <p>{{ project.description }}</p>
