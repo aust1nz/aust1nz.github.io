@@ -1,9 +1,13 @@
 ---
 layout: projects
 title: Principal Reduction Dashboards
+status: Published
 project_date: Spring 2016
-completion_date: 2016-03-01
-description: A straightforward but comprehensive web application for principals to use during the annual budgeting and reduction process, in order to make the most informed staffing decisions for their schools.
+completion_date: 2016-03-01T00:00:00.000Z
+description: >-
+  A straightforward but comprehensive web application for principals to use
+  during the annual budgeting and reduction process, in order to make the most
+  informed staffing decisions for their schools.
 ---
 
 <div class="panel panel-default" markdown="1">
