@@ -1,9 +1,12 @@
 ---
 layout: projects
 title: DCPS Candidate Selection Dashboard
+status: Published
 project_date: Fall 2015
-completion_date: 2015-10-01
-description: A totally custom Salesforce dashboard that lets DCPS hiring managers screen potential candidates using their own selection plans.
+completion_date: 2015-10-01T00:00:00.000Z
+description: >-
+  A totally custom Salesforce dashboard that lets DCPS hiring managers screen
+  potential candidates using their own selection plans.
 ---
 
 <div class="panel panel-default" markdown="1">
