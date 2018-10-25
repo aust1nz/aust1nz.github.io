@@ -1,9 +1,12 @@
 ---
 layout: projects
 title: Mass-Emails (DIY Mailchimp)
+status: Draft
 project_date: Summer 2018
-completion_date: 2018-06-25
-description: An email solution custom-build for DC Public School's internal communication needs.
+completion_date: 2018-06-25T00:00:00.000Z
+description: >-
+  An email solution custom-build for DC Public School's internal communication
+  needs.
 ---
 
 <div class="panel panel-default" markdown="1">
