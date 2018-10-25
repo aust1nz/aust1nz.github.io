@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: School Budget Tool
-status: Draft
+draft: true
 project_date: Winter 2016-2017
 completion_date: 2017-01-01T00:00:00.000Z
 description: >-
