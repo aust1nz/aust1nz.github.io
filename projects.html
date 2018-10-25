@@ -22,7 +22,7 @@ layout: base
 
       {% assign projects = site.projects | sort: 'completion_date' %}
       {% for project in projects reversed %}
-        {% unless post.draft %}
+        {% unless project.draft %}
           <div class="col-md-8 col-md-offset-2">
             <h4 class="section-header">
               <a href="{{ project.url }}">{{ project.title }}</a> 
