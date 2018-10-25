@@ -8,7 +8,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "projects" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Project" # Used in the UI, ie.: "New Post"
     folder: "_projects" # The path to the folder where the documents are stored
-    sort: "project_date:desc" # Default is title:asc
+    sort: "completion_date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields: # The fields each document in this collection have
