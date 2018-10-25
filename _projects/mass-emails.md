@@ -1,7 +1,7 @@
 ---
 layout: projects
 title: Mass-Emails (DIY Mailchimp)
-status: Draft
+draft: true
 project_date: Summer 2018
 completion_date: 2018-06-25T00:00:00.000Z
 description: >-
